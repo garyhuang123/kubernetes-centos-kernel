@@ -12,6 +12,7 @@ CENTOS_KERNEL_RPM_SOURCE=http://vault.centos.org/${CENTOS_VERSION}/updates/Sourc
 WORKSPACE=/workspace
 RPMBUILD_HOME=${WORKSPACE}/rpmbuild
 
+
 echo -e "########## clean old builds ##########\n"
 rm -rf ${RPMBUILD_HOME}/
 
@@ -22,15 +23,15 @@ echo "%_topdir ${RPMBUILD_HOME}" > ~/.rpmmacros
 
 
 echo -e "########## install kernel build dependencies ##########\n"
-yum install -y rpm-build redhat-rpm-config asciidoc hmaccalc perl-ExtUtils-Embed pesign xmlto
-yum install -y audit-libs-devel binutils-devel elfutils-devel elfutils-libelf-devel
-yum install -y ncurses-devel newt-devel numactl-devel pciutils-devel python-devel zlib-devel
+yum install -y rpm-build redhat-rpm-config asciidoc hmaccalc perl-ExtUtils-Embed pesign xmlto \
+               audit-libs-devel binutils-devel elfutils-devel elfutils-libelf-devel \
+               ncurses-devel newt-devel numactl-devel pciutils-devel python-devel zlib-devel
 
 
 echo -e "########## install devel dependencies ##########\n"
 yum install -y make gcc net-tools bc openssl python-devel elfutils-libelf-devel elfutils-devel \
-    zlib-devel binutils-devel bison audit-libs-devel java-devel numactl-devel pciutils-devel  \
-    gettext ncurses-devel python-docutils newt-devel
+               zlib-devel binutils-devel bison audit-libs-devel java-devel numactl-devel \
+               pciutils-devel gettext ncurses-devel python-docutils newt-devel
 
 
 echo -e "########## install kernel src rpm ##########\n"

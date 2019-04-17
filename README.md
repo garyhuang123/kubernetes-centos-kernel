@@ -1,11 +1,13 @@
 # Kubernetes-CentOS-Kernel
 
-Kubernetes-CentOS-Kernel aims to build an enhanced CentOS kernel to run Kubernetes > 1.8 safely. If you are running Kubernetes on CentOS, you may encounter some critical issues which would crash your guest operating system. Kubernetes-CentOS-Kernel fixes those critial issues for you. To be noticed, you will use it at your own risk. It is not suggested to use in production environment.
+Kubernetes-CentOS-Kernel aims to build an enhanced CentOS kernel to run Kubernetes safely. If you are running Kubernetes on CentOS, you may encounter some critical issues that would crash your guest operating system. Kubernetes-CentOS-Kernel fixes those critical issues for you.
+
+To be noticed, you will use it at your own risk. It is not suggested to use in production environment.
 
 ### Current fixed issues
 * *SLUB: Unable to allocate memory on node -1*
 
-  Fixed by disabling the Kernel Memory Accounting which is only experimental on kernel 3.10
+  Fixed by disabling the Kernel Memory Accounting which is only experimental on kernel 3.10.
   
 * *kernel:[921702.796883] unregister_netdevice: waiting for eth0 to become free. Usage count = 1*
 
