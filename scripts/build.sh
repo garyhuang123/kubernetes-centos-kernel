@@ -53,3 +53,6 @@ sed -i 's/CONFIG_MEMCG_KMEM=y/CONFIG_MEMCG_KMEM=n/g' ${RPMBUILD_HOME}/SOURCES/ke
 echo -e "########## build kernel ##########\n"
 cd ${RPMBUILD_HOME}
 rpmbuild -bb --without kabichk --target=$(uname -m) SPECS/kernel.spec
+
+
+echo -e "finish!"
