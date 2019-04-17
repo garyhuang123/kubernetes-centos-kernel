@@ -24,16 +24,16 @@ cd kubernetes-centos-kernel
 sh run.sh
 ```
 
-### Get rpm
+### RPMS
 
 rpmbuild/RPMS/x86_64/kernel-3.10.0-957.10.2.el7.x86_64.rpm
 
-### Upgrade kernel
+### Upgrade
 ```
 rpm -Uvh kernel-3.10.0-957.10.2.el7.x86_64.rpm
 ```
 
-#### Has dependency issues
+#### Has dependency issues?
 ```
 yum localinstall kernel-3.10.0-957.10.2.el7.x86_64.rpm
 ```
