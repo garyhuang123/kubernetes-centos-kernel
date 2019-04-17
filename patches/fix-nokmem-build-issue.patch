@@ -1,0 +1,13 @@
+--- a/mm/memcontrol.c	2019-04-16 01:03:57.445311313 -0700
++++ b/mm/memcontrol.c	2019-04-16 01:05:45.946442826 -0700
+@@ -4679,6 +4679,10 @@ void mem_cgroup_print_bad_page(struct pa
+ }
+ #endif
+ 
++#ifndef CONFIG_MEMCG_KMEM 
++static DEFINE_MUTEX(memcg_limit_mutex);
++#endif
++
+ static int mem_cgroup_resize_limit(struct mem_cgroup *memcg,
+ 				   unsigned long limit)
+ {
