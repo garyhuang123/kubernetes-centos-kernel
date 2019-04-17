@@ -14,7 +14,7 @@ To be noticed, you will use it at your own risk. It is not suggested to use in p
 
   Fixed according to [net: tcp: close sock if net namespace is exiting](https://github.com/torvalds/linux/commit/4ee806d51176ba7b8ff1efd81f271d7252e03a1d)
 
-### Current kernel upstream
+### Kernel upstream
 http://vault.centos.org/7.6.1810/updates/Source/SPackages/kernel-3.10.0-957.10.1.el7.src.rpm
 
 ### Build kernel
@@ -24,7 +24,7 @@ cd kubernetes-centos-kernel
 sh run.sh
 ```
 
-### RPM
+### RPM location
 
 rpmbuild/RPMS/x86_64/kernel-3.10.0-957.10.1.el7.local.x86_64.rpm
 
