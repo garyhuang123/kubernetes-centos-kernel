@@ -40,6 +40,5 @@ yum localinstall kernel-3.10.0-957.10.1.el7.local.x86_64.rpm
 
 ## Notice
 
-**It is not suggested to use in production environment.**
+**There is no warranty on this. It is not suggested to use it in production environment.**
 
-Use it at your own risk.
