@@ -2,7 +2,7 @@
 
 Kubernetes-CentOS-Kernel aims to build an enhanced CentOS kernel to run Kubernetes safely. If you are running Kubernetes on CentOS, you may encounter some critical issues that would crash your guest operating system. Kubernetes-CentOS-Kernel fixes those critical issues for you.
 
-To be noticed, you will use it at your own risk. It is not suggested to use in production environment.
+To be noticed, there is no warranty on this. It is not suggested to use it in production environment.
 
 
 ### Current fixed issues
